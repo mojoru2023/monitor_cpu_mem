@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monitor</title>
+	<style>
+		.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="center">
+		<img src="/image" alt="" id="img">
+	  </div>
+	
+	<script>
+		let img = document.querySelector("#img")
+		setInterval(function () {
+			img.src = "/image?s=" + Math.random()
+		}, 500)
+	</script>
+</body>
+</html>
